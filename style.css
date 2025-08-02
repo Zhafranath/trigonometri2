@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.3); 
+  padding: 60px 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.product-button {
+  display: inline-block;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.wa-button .wa-icon {
+  width: 70px;
+  transition: transform 0.2s;
+}
+
+.wa-button:hover .wa-icon {
+  transform: scale(1.1);
+}
+
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .product-button {
+    font-size: 24px;
+  }
+
+  .wa-button .wa-icon {
+    width: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .product-button {
+    font-size: 28px;
+  }
+
+  .wa-button .wa-icon {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 80px 40px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .product-button {
+    padding: 14px 40px;
+  }
+}
